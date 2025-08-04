@@ -13,10 +13,13 @@ Lightweight and easy to run
 Clone the repository:
 
 **  git clone https://github.com/vardhan232/keylogger_project.git
+
 **  cd keylogger_project
 
 Set up a virtual environment (recommended):
+
 **python3 -m venv env
+
 **source env/bin/activate
 
 Install the required library:
@@ -43,6 +46,7 @@ Log files are saved in your home directory:
 To check log files :
 
 **ls -la ~ | grep .keylogs
+
 **cat ~/.keylogs_*.txt
 
 If you see your keystrokes there — ✅ success!
