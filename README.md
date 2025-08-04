@@ -12,7 +12,7 @@ Lightweight and easy to run
 🛠️ Step-by-Step Setup
 Clone the repository:
 
-**  git clone https://github.com/yourusername/keylogger_project.git
+**  git clone https://github.com/vardhan232/keylogger_project.git
 **  cd keylogger_project
 
 Set up a virtual environment (recommended):
