@@ -1,33 +1,53 @@
-# Python-keylogger
-A python based keylogger project for kali linux
- nano README.md
-# Python Keylogger (Educational Project)
+✅ Features
+Captures all keystrokes in the background
 
-> ⚠️ For educational purposes only. Do **not** use this tool on devices you don't own or have permission to test.
+Saves logs to a hidden file in the user's home directory
 
-## 📋 Description
-A simple Python-based keylogger built using the `pynput` library. It logs keystrokes to a hidden file in the user's home directory.
+Uses the pynput library for listening to keyboard events
 
-## 🚀 How to Run
+Automatically stops on pressing ESC
 
-```bash
+Lightweight and easy to run
+
+🛠️ Step-by-Step Setup
+Clone the repository:
+
+git clone https://github.com/yourusername/keylogger_project.git
+cd keylogger_project
+
+Set up a virtual environment (recommended):
 python3 -m venv env
 source env/bin/activate
+
+Install the required library:
+
 pip install pynput
-python keylogger.py
 
+💡 On Kali Linux, if you face an externally-managed-environment error:
+sudo apt install python3-pip
+pip install --user pynput
 
+Run the keylogger
 
-Save → `Ctrl + O`, `Enter`, `Ctrl + X`
+python3 keylogger.py
 
-Then add and push:
+Stop the keylogger:
 
-```bash
-git add README.md
-git commit -m "Add README file"
-git push
+Press the ESC key.
 
-pip freeze > requirements.txt
-git add requirements.txt
-git commit -m "Add requirements.txt"
-git push
+📂 Log File Location
+Log files are saved in your home directory:
+
+~/.keylogs_YYYY-MM-DD_HH-MM-SS.txt
+
+To check log files :
+
+ls -la ~ | grep .keylogs
+cat ~/.keylogs_*.txt
+
+If you see your keystrokes there — ✅ success!
+
+⚠️ Disclaimer
+This project is for educational purposes only.
+Do not use this tool on systems without explicit permission.
+Unauthorized use is illegal and unethical.
